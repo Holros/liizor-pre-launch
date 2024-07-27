@@ -1,6 +1,12 @@
 import Link from "next/link";
 import rightArrow from "@/assets/icons/move-down-right.svg";
 import Image from "next/image";
+import compliance from "@/assets/icons/compliance.svg"
+import friendly from "@/assets/icons/friendly.svg"
+import security from "@/assets/icons/security.svg"
+import support from "@/assets/icons/support.svg"
+import transparent from "@/assets/icons/transparent.svg"
+import unique from "@/assets/icons/unique.svg"
 
 export default function WhyChooseUs() {
   return (
@@ -34,7 +40,7 @@ export default function WhyChooseUs() {
               "Enhance security with multi-signature wallets, reducing the risk of unauthorized transactions.",
               "Your assets and personal information are protected with cutting-edge encryption technologies.",
             ],
-            picture: rightArrow,
+            picture: security,
           },
           {
             title: "User-Friendly Interface",
@@ -42,7 +48,7 @@ export default function WhyChooseUs() {
               "Navigate easily with our user-friendly interface designed for both beginners and experienced traders.",
               " Access step-by-step guides and tutorials to help you get started and improve your trading skills.s suspendisse orci tempor pretium aliquet ",
             ],
-            picture: rightArrow,
+            picture: friendly,
           },
           {
             title: "Unique Features",
@@ -51,7 +57,7 @@ export default function WhyChooseUs() {
               "Trade a diverse selection of cryptocurrencies, including popular and emerging tokens.",
               "Benefit from competitive and transparent fee structures, maximizing your trading profits.",
             ],
-            picture: rightArrow,
+            picture: unique,
           },
           {
             title: "Transparency",
@@ -59,7 +65,7 @@ export default function WhyChooseUs() {
               "Understand exactly what you're getting into with transparent terms and conditions.",
               "Stay informed about platform updates, maintenance, and any changes affecting your experience.",
             ],
-            picture: rightArrow,
+            picture: transparent,
           },
           {
             title: "Regulatory Compliance",
@@ -67,7 +73,7 @@ export default function WhyChooseUs() {
               "At Liizor, we prioritize your security and trust by adhering to the highest standards of regulatory compliance.",
               "From comprehensive KYC and AML measures to secure data handling and regular audits, we ensure a safe and transparent trading environment for all our users.",
             ],
-            picture: rightArrow,
+            picture: compliance,
           },
           {
             title: "24/7 Support",
@@ -75,12 +81,12 @@ export default function WhyChooseUs() {
               "Access our dedicated customer support team anytime, day or night.",
               "Priority Support for Early Users: Early access users receive priority support to ensure a smooth experience.",
             ],
-            picture: rightArrow,
+            picture: support,
           },
         ].map((why) => (
           <div
             key={why.title}
-            className="flex flex-col gap-3 p-3 rounded-md shadow"
+            className="flex flex-col gap-3 p-3 rounded-md shadow-md"
           >
             <Image
               src={why.picture}

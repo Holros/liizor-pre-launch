@@ -10,7 +10,7 @@ export default function Hero() {
   return (
     <div className="relative flex items-center justify-center bg-gradient-to-r from-[#004EEBCC] to-[#1A2599] px-3 py-5 text-white overflow-hidden">
       <Image width={1728} height={800} src={linesSVG} className="absolute hidden lg:block" />
-      <div className="flex flex-col gap-6 md:flex-row md:gap-3 max-w-[73rem] m-auto justify-between items-center">
+      <div className="flex flex-col gap-6 md:flex-row md:gap-3 max-w-[73rem] m-auto justify-between items-center z-10">
         <div className="flex flex-col gap-6 basis-[60%] items-start">
           <h1
             className={`${lato.className} font-bold text-6xl`}
