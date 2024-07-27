@@ -13,6 +13,7 @@ export default function Home() {
     <>
       <Header />
       <Hero />
+      
       <WhyChooseUs />
       <div className="flex flex-col gap-6 md:flex-row md:gap-3 max-w-[73rem] m-auto justify-between items-center py-5 px-3 shadow-md rounded-3xl mb-5">
         <div className="flex flex-col gap-6 basis-[60%] items-start">
