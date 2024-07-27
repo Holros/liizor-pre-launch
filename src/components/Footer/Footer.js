@@ -12,6 +12,8 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <div className="relative bg-[#004EEBCC]  overflow-hidden text-white opacity-95">
+        {/* Added a cover to disable the footer to prevent accidental clicks on the links, the links are  not available yet*/}
+        <div className="absolute top-0 bottom-0 left-0 right-0 bg-gray-100 opacity-0"></div>
         <div className="py-6 px-3 flex-col flex items-start gap-3 max-w-[73rem] m-auto">
       <div className="flex flex-col justify-between w-full gap-6 md:flex-row">
         <div className="flex flex-col gap-6 ">
