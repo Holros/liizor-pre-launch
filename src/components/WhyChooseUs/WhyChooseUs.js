@@ -26,6 +26,7 @@ export default function WhyChooseUs() {
           <span>Join the Waitlists</span>
           <Image
             src={rightArrow}
+            alt="arrow icon"
             width={30}
             height={30}
             className="h-auto max-w-full w-[30px]"

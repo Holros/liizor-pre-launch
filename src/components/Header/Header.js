@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <div className="bg-gradient-to-r from-[#004EEBCC] to-[#1A2599]">
+    <div className="bg-gradient-to-r from-[#004EEBCC] to-[#1A2599] px-3 py-4">
       {" "}
-      <div className="flex items-center justify-between px-3 gap-3 py-4 max-w-[73rem] m-auto">
+      <div className="flex items-center justify-between gap-3 max-w-[73rem] m-auto">
         <p className={`${urbanist.className} text-[40px] leading-[56px] text-white`}>Liizor</p>
         <Link
           href="#joinWaitlist"
