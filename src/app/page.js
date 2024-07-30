@@ -38,7 +38,7 @@ export default function Home() {
             passHref
             className="flex gap-1 text-[23px] text-white p-3 bg-[#004EEB] rounded-[10px] items-center text-xl"
           >
-            <span>Join the Waitlists</span>
+            <span>Join the Waitlist</span>
             <Image
               src={rightArrow}
               width={30}
