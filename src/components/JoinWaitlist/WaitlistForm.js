@@ -48,7 +48,7 @@ export default function WaitlistForm() {
   };
 
   return (
-    <div className="relative flex flex-col gap-3 md:bottom-5">
+    <div className="relative flex flex-col gap-3 md:bottom-5" id="joinWaitlist">
       <Toaster position="top-right" />
       <p>
         Welcome to Liizor, the next-generation crypto trading platform designed
