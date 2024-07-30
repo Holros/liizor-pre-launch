@@ -23,7 +23,7 @@ export default function WhyChooseUs() {
           passHref
           className="flex gap-1 text-[#004EEB] p-3 bg-[#004EEB1A] rounded-full items-center"
         >
-          <span>Join the Waitlists</span>
+          <span>Join the Waitlist</span>
           <Image
             src={rightArrow}
             alt="arrow icon"
