@@ -48,7 +48,7 @@ export default function Hero() {
             passHref
             className="flex gap-1 text-[23px] text-[#004EEB] p-3 bg-white rounded-[10px] items-center text-xl"
           >
-            <span>Join the Waitlists</span>
+            <span>Join the Waitlist</span>
             <Image
               src={rightArrow}
               width={30}

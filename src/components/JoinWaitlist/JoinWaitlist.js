@@ -5,7 +5,7 @@ import WaitlistForm from "./WaitlistForm";
 
 export default function JoinWaitlist() {
   return (
-    <div className="px-3 py-5">
+    <div className="px-3 py-5" id="joinWaitlist">
       <div className="flex flex-col-reverse justify-between gap-3 md:flex-row-reverse max-w-[73rem] m-auto">
         <div className="basis-[50%]">
           <Image
