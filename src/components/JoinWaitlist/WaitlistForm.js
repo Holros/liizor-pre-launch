@@ -12,39 +12,49 @@ export default function WaitlistForm() {
 
   const onSubmit = (data) => {
     const formData = {
-      name: data.name,
       email: data.email,
     };
-
     const joinWaitlist = async () => {
-      toast.loading("Adding to waitlist");
+      toast.loading("Adding to waitlist...");
       try {
-        const response = await fetch("url goes here", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        });
+        const response = await fetch(
+          "https://back-end-zfku.onrender.com/api/v1/waitlist/upload",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+          }
+        );
 
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
+        // const responseData = await response.json();
+        // console.log(responseData, response);
+
+        // Handle success response
+        if (response.ok) {
+          toast.dismiss();
+          toast.success(
+            "Thank you for joining the Liizor waitlist. Please, check your email for a confirmation message"
+          );
         }
 
-        const responseData = await response.json();
-        console.log(responseData);
-        // Handle success response
-
+        // Handle when user is already on the waitlist
+        if (response.status === 409) {
+          toast.dismiss();
+          toast.error(
+            "You're already on the Liizor waitlist, share the excitement with friends"
+          );
+        }
       } catch (error) {
         toast.dismiss();
         toast.error(
           "Something went wrong. Check internet connection and try again"
         );
-
         console.error("Error:", error);
       }
     };
-    // joinWaitlist();
+    joinWaitlist();
   };
 
   return (
